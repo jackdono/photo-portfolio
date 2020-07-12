@@ -10,7 +10,7 @@ def create_app():
 
     @app.errorhandler(404)
     def page_not_found(e):
-        return 'Page not found'
+        return redirect(url_for('main.home'))
 
     from . import views
     app.register_blueprint(views.bp)
