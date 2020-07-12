@@ -1,1 +1,1 @@
-web: gunicorn -w 2 portfolio:create_app()'
+web: python main.py runserver 0.0.0.0:5000
