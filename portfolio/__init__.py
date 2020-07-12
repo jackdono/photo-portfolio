@@ -4,13 +4,13 @@ from flask_bootstrap import Bootstrap
 def create_app():
     app=Flask(__name__)
     app.debug=True
-    app.secret_key='jdsecretkey'
+    #app.secret_key='jdsecretkey'
     
     bootstrap = Bootstrap(app)
 
     @app.errorhandler(404)
     def page_not_found(e):
-        return 'Page not found'
+        return redirect(url_for('main.home'))
 
     from . import views
     app.register_blueprint(views.bp)
