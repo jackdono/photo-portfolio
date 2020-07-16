@@ -28,9 +28,43 @@
   text-decoration: none;
 }
 
+.fade-in {
+animation: fadeIn ease 3s;
+-webkit-animation: fadeIn ease 3s;
+-moz-animation: fadeIn ease 3s;
+-o-animation: fadeIn ease 3s;
+-ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
 body {
-  background: url('https://i.imgur.com/l8lUyzz.jpg') no-repeat center center fixed;
+  background: url('https://i.imgur.com/YXdpIY0.jpg') no-repeat center center fixed;
   /* https://ibb.co/b7dmSkq */
+  /* https://i.imgur.com/l8lUyzz.jpg */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -47,6 +81,7 @@ body {
 
 <div class='center'>
 <div class="container">
+  <div class="fade-in">
     <div class="row">
         <div class='col-lg-12'>
         <div class="d-flex justify-content-center">
@@ -58,6 +93,7 @@ body {
         </div>
         </div>
     </div>
+  </div>
 </div>
 </div>
 
