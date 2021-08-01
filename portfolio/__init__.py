@@ -1,11 +1,12 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap
+import stripe
 
 def create_app():
     app=Flask(__name__)
-    app.debug=True
-    app.secret_key='jdsecretkey'
-    
+    #app.debug=True
+    #app.secret_key='jdsecretkey'
+
     bootstrap = Bootstrap(app)
 
     @app.errorhandler(404)
